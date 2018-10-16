@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: 'Helvetiva Neue', Helvatica, sans-serif;
+}
+
+.header {
+    height: 5em;
+    width: 100%;
+    padding: 0 0 0 0;
+    background-color: #CBE4F3;
+
+    display: flex;
+    align-items: center;
+}
+
+.org-icon {
+    height: 4em;
+    width: 4em;
+    padding-left: 0.5em;
+}
+
+.titles {
+    padding-left: 1em;
+}
+
+h1#nws-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3#noaa-title {
+    margin: 0;
+    font-weight: 300;
+}
+
+#search-icon {
+    height: 2.5em;
+    width: 2.5em;
+    margin-left: auto;
+    padding-right: 0.5em;
+}
