@@ -45,7 +45,7 @@ p {
     text-decoration: none;
 }
 
-.org-icon {
+.header-icon {
     height: 4em;
     width: 4em;
     padding-left: 0.5em;
@@ -55,11 +55,28 @@ p {
     padding-left: 1em;
 }
 
-.current-body {
+.column-body {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-right: 2.5em;
+    padding-left: 2.5em;
+}
+
+.forecast-period {
+    width: 100%;
+}
+
+.forecast-period > h2 {
+    color: #707070;
+    font-size: 1.25em;
+    margin-bottom: 0px;
+}
+
+.forecast-icon {
+    height: 7em;
+    width: 7em;
+    padding-right: 1em;
 }
 
 #noaa-title {
@@ -93,9 +110,17 @@ p {
     width: 20em;
 }
 
-@media(min-width: 700px) {
+@media only screen and (min-width: 700px) {
     #forecast-body {
         display: grid;
         grid-template-columns: 40% 1fr;
+    }
+
+    .column-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 1em;
+        padding-left: 1em;
     }
 }

@@ -4,11 +4,17 @@
     <title>Forecast for Providence, RI</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="icon" type="image/ico" href="assets/favicon.ico"/>
+    <!-- Apparently needed to get mobile devices to respect media queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="header flex-columns">
-        <img src="assets/NOAA-logo.png" class="org-icon"/>
-        <img src="assets/NWS-Logo.png" class="org-icon"/>
+        <img hidden src="assets/menu.png" id="menu-icon" class="header-icon"/>
+        <img src="assets/NOAA-logo.png" class="header-icon"/>
+        <img src="assets/NWS-Logo.png" class="header-icon"/>
         <div class="titles">
             <h1 class="flat-bottom flat-top">National Weather Service</h1>
             <h3 id="noaa-title" class="flat-bottom flat-top">NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION</h3>
@@ -33,9 +39,9 @@
             <h2 style="margin-bottom: 0px">Current conditions at: </h2>
             <p style="margin-top: 0px">69 Brown St • Providence, RI</p>
 
-            <div class="current-body">
+            <div class="column-body">
                 <div class="flex-columns">
-                    <img src="assets/Partly Cloudy.png" id="current-condition-icon"/>
+                    <img src="assets/partly cloudy.png" id="current-condition-icon"/>
                     <div id="current-temps">
                         <h1 class="flat-bottom">54ºF</h1>
                         <p class="flat-top">12ºC</p>
@@ -71,8 +77,38 @@
                 <a href="#">Hourly forecast</a>
             </div>
 
-            <div class="forecast-body">
+            <div class="column-body">
+                <div class="forecast-period">
+                    <h2>Today</h2>
+                    <div class="flex-columns">
+                        <img src="assets/sunny.png" class="forecast-icon"/>
+                        <p>Partly sunny, with a high near 59. West wind 6 to 8 mph.</p>
+                    </div>
+                </div>
 
+                <div class="forecast-period">
+                    <h2>Tonight</h2>
+                    <div class="flex-columns">
+                        <img src="assets/moon.png" class="forecast-icon"/>
+                        <p>Mostly clear, with a low around 43. Southwest wind 3 to 6 mph.</p>
+                    </div>
+                </div>
+
+                <div class="forecast-period">
+                    <h2>Tomorrow</h2>
+                    <div class="flex-columns">
+                        <img src="assets/cloudy.png" class="forecast-icon"/>
+                        <p>Showers likely, mainly after noon. Increasing clouds, with a high near 64. Light south wind increasing to 6 to 11 mph in the morning. Chance of precipitation is 70%. New precipitation amounts of less than a tenth of an inch possible.</p>
+                    </div>
+                </div>
+
+                <div class="forecast-period">
+                    <h2>Tomorrow night</h2>
+                    <div class="flex-columns">
+                        <img src="assets/rainy.png" class="forecast-icon"/>
+                        <p>Showers likely, mainly between 11pm and midnight. Patchy fog before 9pm. Otherwise, mostly cloudy, with a low around 47. Southwest wind 9 to 13 mph, with gusts as high as 26 mph. Chance of precipitation is 60%. New precipitation amounts between a tenth and quarter of an inch possible.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
