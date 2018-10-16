@@ -6,16 +6,17 @@
     <link rel="icon" type="image/ico" href="assets/favicon.ico"/>
 </head>
 <body>
-    <div class="header">
+    <div class="header flex-columns">
         <img src="assets/NOAA-logo.png" class="org-icon"/>
         <img src="assets/NWS-Logo.png" class="org-icon"/>
         <div class="titles">
-            <h1 id="nws-title">National Weather Service</h1>
-            <h3 id="noaa-title">NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION</h3>
+            <h1 class="flat-bottom flat-top">National Weather Service</h1>
+            <h3 id="noaa-title" class="flat-bottom flat-top">NATIONAL OCEANIC AND ATMOSPHERIC ADMINISTRATION</h3>
         </div>
         <img src="assets/search.png" id="search-icon"/>
     </div>
-    <div class="navbar">
+
+    <div class="navbar flex-columns">
         <p><a href="#">Home</a></p>
         <p><a href="#">Forecast</a></p>
         <p><a href="#">Past weather</a></p>
@@ -27,5 +28,53 @@
         <p><a href="#">About</a></p>
     </div>
     
+    <div id="forecast-body">
+        <div id="current-column">
+            <h2 style="margin-bottom: 0px">Current conditions at: </h2>
+            <p style="margin-top: 0px">69 Brown St • Providence, RI</p>
+
+            <div class="current-body">
+                <div class="flex-columns">
+                    <img src="assets/Partly Cloudy.png" id="current-condition-icon"/>
+                    <div id="current-temps">
+                        <h1 class="flat-bottom">54ºF</h1>
+                        <p class="flat-top">12ºC</p>
+                    </div>
+                </div>
+    
+                <div class="flex-columns">
+                    <p style="text-align: right">
+                        <b>Humidity</b><br>
+                        <b>Wind Speed</b><br>
+                        <b>Barometer</b><br>
+                        <b>Dewpoint</b><br>
+                        <b>Visibility</b><br>
+                        <b>Last update</b>
+                    </p>
+                    <p style="padding-left: 1em">
+                        93%<br>
+                        SW 14 G 21 mph<br>
+                        29.91 in (1012.7 mb)<br>
+                        63°F (17°C)<br>
+                        4.00 mi<br>
+                        15 Oct 5:51 pm EDT
+                    </p>
+                </div>
+
+                <img src="assets/radar map.png" id="radar-map"/>
+            </div>
+        </div>
+
+        <div id="forecast-column">
+            <div class="flex-columns">
+                <h2 style="padding-right: 0.5em">Forecast</h2>
+                <a href="#">Hourly forecast</a>
+            </div>
+
+            <div class="forecast-body">
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
