@@ -24,6 +24,9 @@ p {
     height: 5em;
     width: 100%;
     background-color: #CBE4F3;
+    border-bottom: #707070;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 }
 
 .navbar {
@@ -33,9 +36,9 @@ p {
 
     justify-content: space-evenly;
 
-    border: #707070;
-    border-width: 1px;
-    border-style: solid;
+    border-bottom: #707070;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
     box-shadow: 2px 1px lightgrey;
 }
 

@@ -1,5 +1,3 @@
-console.log("this is getting started");
-
 $(document).ready(() => {
 	resize();
 });
